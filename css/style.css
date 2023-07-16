@@ -108,23 +108,3 @@ nav {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 50% 50%;
 }
-
-.user-images {
-    display: flex;
-    margin-bottom: 1.2rem;
-}
-
-.user-img {
-    border-radius: 50%;
-    height: 5rem;
-    box-shadow: 0 0 0 2px white;
-}
-
-.user-img:not(:first-child) {
-    margin-left: -1%;
-}
-
-.users p {
-    font-size: 1.2rem;
-    width: 70%;
-}
