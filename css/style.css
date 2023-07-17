@@ -22,7 +22,7 @@ FONT SIZE SYSTEM (px)
 
 COLORS
 primary: #e67e22
-tints:
+tints: #fdf2e9
 shades:
 accent:
 grays: #555, #333
@@ -36,11 +36,64 @@ body {
     color: var(--gray-color);
 }
 
+.hero-section {
+    background-color: #fdf2e9;
+    padding: 9.6rem 0;
+}
+
 .hero {
     max-width: 150rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    gap: 9.6rem;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    color: #333;
+    margin-bottom: 3.2rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: white;
+    color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .hero-img {
