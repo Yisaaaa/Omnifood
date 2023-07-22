@@ -23,14 +23,14 @@ FONT SIZE SYSTEM (px)
 COLORS
 primary: #e67e22
 tints: #fdf2e9
-shades:
+shades: #cf711f
 accent:
 grays: #555, #333
 
 */
 
 body {
-    font-family: sans-serif;
+    font-family: "Rubik", sans-serif;
     line-height: 1;
     font-weight: 400;
     color: var(--gray-color);
@@ -69,6 +69,7 @@ body {
 .btn:visited {
     display: inline-block;
     font-size: 2rem;
+    font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     text-decoration: none;
@@ -102,6 +103,35 @@ body {
 
 .hero-img {
     width: 100%;
+}
+
+/* CUSTOMER IMAGES */
+
+.delivered-meals {
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.delivered-imgs img {
+    height: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:not(:first-child) {
+    margin-left: -1.6rem;
+}
+
+.delivered-txt {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.delivered-txt span {
+    font-weight: 700;
+    color: #cf711f;
 }
 
 /* REUSABLE HELPER CLASS */
