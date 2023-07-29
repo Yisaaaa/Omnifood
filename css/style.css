@@ -31,6 +31,10 @@ Default: 1
 Heading-primary: 1.05
 Paragraph default: 1.6
 
+-- LETTER SPACING
+0.75px
+0.5px
+
 -- COLORS
 primary: #e67e22
 tints: #fdf2e9
@@ -75,13 +79,37 @@ body {
     padding: 0 3.2rem;
 }
 
-.heading-primary {
-    font-size: 5.2rem;
+.heading-primary,
+.heading-secondary {
     font-weight: 700;
     line-height: 1.05;
-    letter-spacing: -0.5px;
     color: #333;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+
+    letter-spacing: -0.5px;
     margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1;
+    margin-bottom: 9.6rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+.heading-tertiary {
 }
 
 .btn:link,
@@ -247,5 +275,8 @@ body {
 
 .how-section {
     padding: 9.6rem 0;
-    background-color: orangered;
+}
+
+.step-img {
+    width: 25%;
 }
