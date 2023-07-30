@@ -4,7 +4,12 @@
 
 .grid {
     display: grid;
-    gap: 9.6rem;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid--center-v {
+    align-items: center;
 }
 
 .grid--2-cols {
@@ -16,29 +21,35 @@
 }
 
 .container {
-    max-width: 140rem;
+    max-width: 130rem;
     margin: 0 auto;
     padding: 0 3.2rem;
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
     font-weight: 700;
-    line-height: 1.05;
     color: #333;
 }
 
 .heading-primary {
     font-size: 5.2rem;
-
     letter-spacing: -0.5px;
     margin-bottom: 3.2rem;
+    line-height: 1.05;
 }
 
 .heading-secondary {
     font-size: 4.4rem;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
 }
 
 .subheading {
@@ -56,9 +67,6 @@
     font-weight: 600;
     color: #ddd;
     margin-bottom: 1.2rem;
-}
-
-.heading-tertiary {
 }
 
 .btn:link,

@@ -37,7 +37,7 @@ Paragraph default: 1.6
 
 -- COLORS
 primary: #e67e22
-tints: #fdf2e9
+tints: #fdf2e9, #fae5d3
 shades: #cf711f
 accent:
 grays: #555, #444, #333
@@ -126,7 +126,7 @@ body {
 }
 
 .hero {
-    max-width: 150rem;
+    max-width: 160rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12.8rem;
@@ -180,6 +180,40 @@ body {
     padding: 9.6rem 0;
 }
 
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.step-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.step-img-box::before {
+    background-color: #fdf2e9;
+    width: 60%;
+    padding-bottom: 60%;
+    z-index: -2;
+}
+
+.step-img-box::after {
+    background-color: #fae5d3;
+    width: 45%;
+    padding-bottom: 45%;
+    z-index: -1;
+}
+
 .step-img {
-    width: 25%;
+    width: 35%;
 }
