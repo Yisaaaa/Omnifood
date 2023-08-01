@@ -109,3 +109,7 @@
 .margin-right-sm {
     margin-right: 1.6rem !important;
 }
+
+strong {
+    font-weight: 500;
+}
