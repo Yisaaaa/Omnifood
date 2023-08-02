@@ -79,7 +79,7 @@
     text-decoration: none;
 
     /* Always put on original state */
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn--full:link,
