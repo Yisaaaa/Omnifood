@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #e67e22;
+    --primary-color--darker: #cf711f;
+    --gray-color: #444;
+}
+
 /****************************/
 /* GENERAL RESUABLE COMPONENTS */
 /****************************/
@@ -56,7 +62,7 @@
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    color: #cf711f;
+    color: var(--primary-color--darker);
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing: 0.75px;
@@ -90,7 +96,7 @@
 
 .btn--full:hover,
 .btn--full:active {
-    background-color: #cf711f;
+    background-color: var(--primary-color--darker);
 }
 
 .btn--outline:link,
@@ -105,9 +111,33 @@
     box-shadow: inset 0 0 0 3px #fff;
 }
 
-/* REUSABLE HELPER CLASS */
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid currentColor;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: var(--primary-color--darker);
+    border-bottom: 1px solid transparent;
+}
+
+/* REUSABLE HELPER CLASS/SETTING CLASSES */
+.center-text {
+    text-align: center;
+}
+
 .margin-right-sm {
     margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
 }
 
 strong {
