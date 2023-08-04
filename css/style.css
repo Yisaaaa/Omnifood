@@ -41,7 +41,8 @@ primary: #e67e22
 tints: #fdf2e9, #fae5d3
 shades: #cf711f
 accent:
-grays: #555, #444, #333
+grays: #6F6F6F (lightest gray allowed on #fdf2e9)
+#555, #444, #333
 
 
 -- BORDER RADIUS
@@ -394,7 +395,7 @@ body {
 }
 
 .testimonial-name {
-    color: #777;
+    color: #6f6f6f;
     font-size: 1.6rem;
 }
 
