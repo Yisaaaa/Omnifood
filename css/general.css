@@ -143,3 +143,25 @@
 strong {
     font-weight: 500;
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    list-style: none;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--primary-color);
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    font-size: 1.8rem;
+}
