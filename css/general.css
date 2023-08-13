@@ -8,10 +8,20 @@
 /* GENERAL RESUABLE COMPONENTS */
 /****************************/
 
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
 .grid {
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 .grid--center-v {
@@ -26,10 +36,8 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.container {
-    max-width: 130rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .heading-primary,
@@ -127,23 +135,6 @@
     border-bottom: 1px solid transparent;
 }
 
-/* REUSABLE HELPER CLASS/SETTING CLASSES */
-.center-text {
-    text-align: center;
-}
-
-.margin-right-sm {
-    margin-right: 1.6rem !important;
-}
-
-.margin-bottom-md {
-    margin-bottom: 4.8rem !important;
-}
-
-strong {
-    font-weight: 500;
-}
-
 .list {
     display: flex;
     flex-direction: column;
@@ -164,4 +155,21 @@ strong {
     gap: 1.6rem;
 
     font-size: 1.8rem;
+}
+
+/* REUSABLE HELPER CLASS/SETTING CLASSES */
+.center-text {
+    text-align: center;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+strong {
+    font-weight: 500;
 }
