@@ -83,6 +83,7 @@
     margin-bottom: 1.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -92,6 +93,9 @@
     border-radius: 9px;
     text-decoration: none;
 
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
     /* Always put on original state */
     transition: all 0.3s;
 }
@@ -117,6 +121,18 @@
 .btn--outline:active {
     background-color: #fdf2e9;
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fdf2e9;
+    color: #555;
 }
 
 .link:link,
@@ -155,6 +171,13 @@
     gap: 1.6rem;
 
     font-size: 1.8rem;
+}
+
+*:focus {
+    outline: none;
+    /* outline: 4px dotted #e67e22; */
+    /* outline-offset: 8px; */
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* REUSABLE HELPER CLASS/SETTING CLASSES */
