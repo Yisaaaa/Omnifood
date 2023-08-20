@@ -185,6 +185,39 @@ Instead, 1rem = 1em = 16px
   /* PUT THE NAV BACK ON ITS ORIGINAL POSITION */
 }
 
+/****************************/
+/* BELOW 704px (Smaller Tablets) */
+/****************************/
+@media (max-width: 44em) {
+  .grid--4-cols,
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .address-col,
+  .logo-col {
+    grid-column: span 3;
+  }
+}
+
 /*
  -- SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
