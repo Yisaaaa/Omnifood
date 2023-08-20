@@ -13,6 +13,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 
 /*
@@ -117,6 +118,27 @@ body {
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: var(--primary-color--darker);
+}
+
+/* MOBILE NAV */
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn--mobile-nav {
+  background: none;
+  border: none;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.close-icon {
+  display: none;
 }
 
 /****************************/

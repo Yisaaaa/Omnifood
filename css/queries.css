@@ -123,6 +123,66 @@ Instead, 1rem = 1em = 16px
   .btn--form {
     margin-top: 1.2rem;
   }
+
+  /* MOBILE NAV */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+
+    /* HIDING MOBILE NAV ONLY VISIBLE WHEN nav--open exist */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    /* PUT THE NAV ON THE RIGHT SIDE FOR SLIDE IN ANIMATION */
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .btn--mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+
+  /* NAV IS OPEN */
+
+  .nav--open .main-nav {
+    transform: translate(0);
+  }
+
+  .nav--open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav--open .close-icon {
+    display: block;
+  }
+
+  .nav--open .menu-icon {
+    display: none;
+  }
+
+  /* PUT THE NAV BACK ON ITS ORIGINAL POSITION */
 }
 
 /*
