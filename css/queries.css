@@ -273,6 +273,26 @@ Instead, 1rem = 1em = 16px
   .testimonials {
     grid-template-columns: 1fr;
   }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 0.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
 }
 
 /*
