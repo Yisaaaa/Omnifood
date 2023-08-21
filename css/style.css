@@ -61,6 +61,11 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
 /****************************/
 /* HEADER */
 /****************************/
