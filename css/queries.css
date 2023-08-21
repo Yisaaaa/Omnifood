@@ -218,6 +218,63 @@ Instead, 1rem = 1em = 16px
   }
 }
 
+/****************************/
+/* BELOW 544px (Phones) */
+/****************************/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 3.2rem;
+  }
+
+  .grid--2-cols,
+  .grid--4-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .how-section,
+  .meals-section,
+  .testimonials-section {
+    padding: 4.6rem 0;
+  }
+
+  .testimonials-container {
+    padding: 4.6rem 3.2rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*
  -- SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
