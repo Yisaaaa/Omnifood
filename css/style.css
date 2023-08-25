@@ -138,6 +138,10 @@ body {
   display: none;
 }
 
+.btn--mobile-nav:focus {
+  box-shadow: none;
+}
+
 .icon-mobile-nav {
   width: 3.2rem;
   height: 3.2rem;
