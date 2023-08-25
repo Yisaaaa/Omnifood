@@ -27,6 +27,11 @@ allLinks.forEach(function (link) {
       element.scrollIntoView({
         behavior: "smooth",
       });
+
+      // Hide the mobile nav if it exists
+      if (headerEL.classList.contains("nav--open")) {
+        headerEL.classList.remove("nav--open");
+      }
     }
   });
 });
