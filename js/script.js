@@ -1,10 +1,14 @@
 // This makes the mobile-nav-button work
 const mobileNavEL = document.querySelector(".btn--mobile-nav");
-
+const htmlEL = document.querySelector("html");
 const headerEL = document.querySelector(".header");
 
 mobileNavEL.addEventListener("click", function () {
   headerEL.classList.toggle("nav--open");
+
+  if (headerEL.classList.contains("nav--open")) {
+    htmlEL.style.overflowY = "hidden";
+  } else htmlEL.style.overflow = "auto";
 });
 
 // Implementing scroll into page behaviour
@@ -31,6 +35,7 @@ allLinks.forEach(function (link) {
       // Hide the mobile nav if it exists
       if (headerEL.classList.contains("nav--open")) {
         headerEL.classList.remove("nav--open");
+        htmlEL.style.overflow = "auto";
       }
     }
   });
