@@ -6,3 +6,27 @@ const headerEL = document.querySelector(".header");
 mobileNavEL.addEventListener("click", function () {
   headerEL.classList.toggle("nav--open");
 });
+
+// Implementing scroll into page behaviour
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const href = link.getAttribute("href");
+    console.log(href);
+
+    if (href === "#") {
+      scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else if (href.startsWith("#")) {
+      const element = document.querySelector(href);
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+});

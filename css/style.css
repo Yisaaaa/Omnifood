@@ -12,7 +12,9 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+
+  /* Wouldn't work on browsers like safari */
+  /* scroll-behavior: smooth; */
   overflow-x: hidden;
 }
 
