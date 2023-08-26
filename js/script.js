@@ -40,3 +40,21 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+// IMPLEMENTING STICKY HEADER
+const target = document.querySelector(".hero-section");
+const observer = new IntersectionObserver(
+  function (entries) {
+    const entry = entries[0];
+    if (!entry.isIntersecting) {
+      console.log("not visible");
+      headerEL.classList.add("sticky");
+    } else headerEL.classList.remove("sticky");
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+observer.observe(target);
