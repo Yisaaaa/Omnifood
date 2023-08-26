@@ -48,12 +48,13 @@ const observer = new IntersectionObserver(
     const entry = entries[0];
     if (!entry.isIntersecting) {
       console.log("not visible");
-      headerEL.classList.add("sticky");
-    } else headerEL.classList.remove("sticky");
+      document.body.classList.add("sticky");
+    } else document.body.classList.remove("sticky");
   },
   {
     root: null,
     threshold: 0,
+    rootMargin: "-80px",
   }
 );
 
